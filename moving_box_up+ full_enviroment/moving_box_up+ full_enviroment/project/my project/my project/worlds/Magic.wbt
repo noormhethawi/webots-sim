@@ -1,0 +1,891 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/kuka/youbot/protos/Youbot.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/kuka/youbot/protos/KukaBox.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.14354927255335 0.07327493650348578 0.9869267399507494 2.9708861378540785
+  position 10.762928122193236 -1.1249378855547882 0.8799067162545372
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Youbot {
+  hidden position_0_0 108.6155645031993
+  hidden position_0_1 108.61585612671595
+  hidden position_0_2 108.37928172645309
+  hidden position_0_3 108.37950789483509
+  hidden position_13_0 5.590868519025262e-06
+  hidden rotation_14 0 0 1 5.59085531243001e-06
+  hidden position_14_0 1.8026707682858965e-07
+  hidden rotation_15 0 -1 0 1.812804499357409e-07
+  hidden position_15_0 3.17249667600413e-07
+  hidden rotation_16 0 -1 0 3.1680303253932776e-07
+  hidden position_16_0 -1.0950997607837982e-08
+  hidden position_17_0 -1.448951922504249e-09
+  hidden position_18_0 9.655978963081808e-11
+  hidden position_18_1 -2.412240742858743e-11
+  hidden translation_19 0 9.655978963081808e-11 0.09
+  hidden translation_20 0 2.412240742858743e-11 0.09
+  hidden rotation_21 0 -1 0 4.481771026033262
+  hidden rotation_22 0 -1 0 4.4814794025166025
+  hidden rotation_23 0 -1 0 4.71805380277947
+  hidden rotation_24 0 -1 0 4.71782763439747
+  translation 8.44826 -0.417534 0.108571
+  rotation -0.01938520352331527 0.999808384151973 0.002721922809436186 0.004238415608836148
+  controller "my_controller1"
+  bodySlot [
+    GPS {
+    }
+    Camera {
+      translation 0.143845 -0.174099 -0.0322003
+      rotation -0.2676970586713046 0.926143202983291 -0.26570105823384016 1.62717
+      name "camera1"
+      recognition Recognition {
+      }
+    }
+    Camera {
+      translation 0.278982 0.0123436 -0.0344099
+      rotation 0.7668115743656342 0.25674885748632287 -0.5882856734600677 -0.1351653071795864
+      recognition Recognition {
+      }
+    }
+    DistanceSensor {
+      translation 0.27 0 0
+    }
+    DistanceSensor {
+      translation 0.23 -0.08 -0.07
+      rotation 0 1 0 1.5708
+      name "lfs0"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.27 -0.16 -0.07
+      rotation 0 1 0 1.5708
+      name "lfs4"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation -0.27 -0.16 -0.0699999
+      rotation 0 1 0 1.5708
+      name "lfs6"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.27 0.16 -0.07
+      rotation 0 1 0 1.5708
+      name "lfs5"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation -0.28 0.16 -0.0699991
+      rotation 0 1 0 1.5708
+      name "lfs7"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.23 -0.04 -0.07
+      rotation 0 1 0 1.5708
+      name "lfs1"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.23 0.03 -0.07
+      rotation 0 1 0 1.5708
+      name "lfs2"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.23 0.07 -0.07
+      rotation 0 1 0 1.5708
+      name "lfs3"
+      type "infra-red"
+    }
+  ]
+}
+Youbot {
+  hidden position_0_0 -49.452234462895944
+  hidden position_0_1 -49.45223781544179
+  hidden position_0_2 -49.4520278610238
+  hidden position_0_3 -49.452030016686926
+  hidden position_14_0 -7.311686092346322e-08
+  hidden rotation_15 0 0 -1 7.300048299977715e-08
+  hidden position_15_0 4.3903867610094045e-07
+  hidden rotation_16 0 -1 0 4.3901562281418636e-07
+  hidden position_16_0 6.65191915554962e-07
+  hidden rotation_17 0 -1 0 6.650660516149253e-07
+  hidden position_17_0 -2.649979357429448e-09
+  hidden position_18_0 -1.22844096107787e-09
+  hidden position_19_0 8.996533794139912e-11
+  hidden position_19_1 -2.4393454884687065e-11
+  hidden translation_20 0 8.996533794139912e-11 0.09
+  hidden translation_21 0 2.4393454884687065e-11 0.09
+  hidden rotation_22 0 0.9999999999999999 0 0.8132479945407473
+  hidden rotation_23 0 1 0 0.8132446419949012
+  hidden rotation_24 0 1 0 0.8134545964128911
+  hidden rotation_25 0 1 0 0.8134524407497656
+  translation 3.9195044480118484 0.8175907942299765 0.09887518560217248
+  rotation -0.019351241937864045 0.9998106804967922 -0.0020328797317675958 0.0042384093411651416
+  name "youBot(1)"
+  controller "my_controller1"
+  bodySlot [
+    Compass {
+      zAxis FALSE
+    }
+    GPS {
+    }
+    Camera {
+      translation 0.143845 -0.174099 -0.0322003
+      rotation -0.2676970586713046 0.926143202983291 -0.26570105823384016 1.62717
+      name "camera1"
+      recognition Recognition {
+      }
+    }
+    Camera {
+      translation 0.278982 0.0123436 -0.0344099
+      rotation 0.7668115743656342 0.25674885748632287 -0.5882856734600677 -0.1351653071795864
+      recognition Recognition {
+      }
+    }
+    DistanceSensor {
+      translation 0.27 0 0
+    }
+    DistanceSensor {
+      translation 0.23 -0.08 -0.07
+      rotation 0 1 0 1.5708
+      name "lfs0"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.27 -0.16 -0.07
+      rotation 0 1 0 1.5708
+      name "lfs4"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation -0.27 -0.16 -0.0699999
+      rotation 0 1 0 1.5708
+      name "lfs6"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.27 0.16 -0.07
+      rotation 0 1 0 1.5708
+      name "lfs5"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation -0.28 0.16 -0.0699991
+      rotation 0 1 0 1.5708
+      name "lfs7"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.23 -0.04 -0.07
+      rotation 0 1 0 1.5708
+      name "lfs1"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.23 0.03 -0.07
+      rotation 0 1 0 1.5708
+      name "lfs2"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.23 0.07 -0.07
+      rotation 0 1 0 1.5708
+      name "lfs3"
+      type "infra-red"
+    }
+  ]
+}
+Wall {
+  size 20 0.4 0.17
+  appearance Appearance {
+    material Material {
+      diffuseColor 0 0 0
+    }
+    texture ImageTexture {
+      url [
+        "photo_2024-12-26_20-17-21.jpg"
+      ]
+    }
+  }
+}
+KukaBox {
+  translation 8.94 -0.42258 0.024867585452681164
+  rotation 4.132720033862329e-17 1.8924036799797441e-16 1 1.5708000181029635
+  name "Kuka box(1)"
+  color 0 1 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation -8.13 -7.47264 0.024867585452681164
+  rotation -8.499216103351911e-17 -2.907696055314271e-16 1 1.5708000181029635
+  name "Kuka box blue"
+  color 0 0 1
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation -8.62 -7.47264 0.024867585452681164
+  rotation -8.499216103351911e-17 -2.907696055314271e-16 1 1.5708000181029635
+  name "Kuka box blue(3)"
+  color 0 0 1
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation -8.46 -7.47264 0.024867585452681168
+  rotation -3.4464257949322674e-17 -1.2869052820893959e-17 1 1.5708000181029635
+  name "Kuka box blue(2)"
+  color 0 0 1
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation -8.31 -7.47264 0.024867585452681164
+  rotation -8.499216103351911e-17 -2.907696055314271e-16 1 1.5708000181029635
+  name "Kuka box blue(1)"
+  color 0 0 1
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation -3.16 -7.47263 0.02486758545268117
+  rotation 9.185426411808627e-17 1.2394409126777532e-17 1 1.5708000181029635
+  name "Kuka box yellow"
+  color 1 1 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation -3.03 -7.47263 0.02486758545268117
+  rotation 9.185426411808627e-17 1.2394409126777532e-17 1 1.5708000181029635
+  name "Kuka box yellow(3)"
+  color 1 1 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation -3.41 -7.47263 0.02486758545268117
+  rotation 9.185426411808627e-17 1.2394409126777532e-17 1 1.5708000181029635
+  name "Kuka box yellow(2)"
+  color 1 1 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation -3.28 -7.47263 0.02486758545268117
+  rotation 9.185426411808627e-17 1.2394409126777532e-17 1 1.5708000181029635
+  name "Kuka box yellow(1)"
+  color 1 1 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 3.42 -7.45259 0.02486758545268117
+  rotation 9.185426411808627e-17 1.2394409126777532e-17 1 1.5708000181029635
+  name "Kuka box green"
+  color 0 1 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 3.01 -7.45259 0.02486758545268117
+  rotation 9.185426411808627e-17 1.2394409126777532e-17 1 1.5708000181029635
+  name "Kuka box green(3)"
+  color 0 1 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 3.15 -7.45259 0.02486758545268117
+  rotation 9.185426411808627e-17 1.2394409126777532e-17 1 1.5708000181029635
+  name "Kuka box green(2)"
+  color 0 1 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 3.27 -7.45259 0.02486758545268117
+  rotation 9.185426411808627e-17 1.2394409126777532e-17 1 1.5708000181029635
+  name "Kuka box green(1)"
+  color 0 1 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 8.92 -7.41258 0.024867585452681164
+  rotation -8.499216103351911e-17 -2.907696055314271e-16 1 1.5708000181029635
+  name "Kuka box red"
+  color 1 0 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 8.56 -7.41258 0.024867585452681164
+  rotation -8.499216103351911e-17 -2.907696055314271e-16 1 1.5708000181029635
+  name "Kuka box red(3)"
+  color 1 0 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 8.69 -7.41258 0.024867585452681164
+  rotation -8.499216103351911e-17 -2.907696055314271e-16 1 1.5708000181029635
+  name "Kuka box red(2)"
+  color 1 0 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 8.79 -7.41258 0.024867585452681168
+  rotation -3.4464257949322674e-17 -1.2869052820893959e-17 1 1.5708000181029635
+  name "Kuka box red(1)"
+  color 1 0 0
+  size 0.05 0.05 0.05
+}
+Solid {
+  translation 0.135712 -0.41121 -5.73205e-05
+  rotation -0.577351935843213 0.5773539358429908 0.5773449358439909 -2.094395307179586
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          ambientIntensity 1
+          diffuseColor 0 0 0
+        }
+      }
+      geometry Box {
+        size 0.2 0.01 17
+      }
+    }
+  ]
+  name "startline"
+  recognitionColors [
+    0 0 0
+  ]
+}
+Solid {
+  translation 0.135712 0.42879 -6.25566e-05
+  rotation -0.577351935843213 0.5773539358429908 0.5773449358439909 -2.094395307179586
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          ambientIntensity 1
+          diffuseColor 0 0 0
+        }
+      }
+      geometry Box {
+        size 0.2 0.01 17
+      }
+    }
+  ]
+  name "startline(1)"
+  recognitionColors [
+    0 0 0
+  ]
+}
+Solid {
+  translation 8.70572 -3.57121 1.93703e-05
+  rotation -0.9999999999803539 2.469639999951481e-06 -5.7613299998868125e-06 -1.5707853071795865
+  children [
+    Solid {
+      translation -0.03 0 -3.14
+      rotation 1 0 0 -1.5707953071795862
+    }
+    Solid {
+      translation -0.03 -6.53562e-06 3.27
+      rotation 1 0 0 -1.5707953071795862
+      name "solid(1)"
+    }
+    Shape {
+      appearance Appearance {
+        material Material {
+          ambientIntensity 1
+          diffuseColor 0 0 0
+        }
+      }
+      geometry Box {
+        size 0.2 0.01 6.5
+      }
+    }
+  ]
+  name "red_line"
+  recognitionColors [
+    0 0 0
+  ]
+}
+Solid {
+  translation 8.70571 3.57879 -5.94204e-05
+  rotation -0.9999999999803539 2.469639999951481e-06 -5.7613299998868125e-06 -1.5707853071795865
+  children [
+    Solid {
+      translation -0.03 0 -3.14
+      rotation 1 0 0 -1.5707953071795862
+    }
+    Solid {
+      translation -0.03 -6.53562e-06 3.27
+      rotation 1 0 0 -1.5707953071795862
+      name "solid(1)"
+    }
+    Shape {
+      appearance Appearance {
+        material Material {
+          ambientIntensity 1
+          diffuseColor 0 0 0
+        }
+      }
+      geometry Box {
+        size 0.2 0.01 6.5
+      }
+    }
+  ]
+  name "red_line(1)"
+  recognitionColors [
+    0 0 0
+  ]
+}
+Solid {
+  translation 3.15572 -3.71121 -2.4768e-05
+  rotation -0.9999999999803539 2.469639999951481e-06 -5.7613299998868125e-06 -1.5707853071795865
+  children [
+    Solid {
+      translation -0.03 0 -3.14
+      rotation 1 0 0 -1.5707953071795862
+    }
+    Solid {
+      translation -0.03 -6.52553e-06 3.26
+      rotation 1 0 0 -1.5707953071795862
+      name "solid(1)"
+    }
+    Shape {
+      appearance Appearance {
+        material Material {
+          ambientIntensity 1
+          diffuseColor 0 0 0
+        }
+      }
+      geometry Box {
+        size 0.2 0.01 6.5
+      }
+    }
+  ]
+  name "green_line"
+  recognitionColors [
+    0 0 0
+  ]
+}
+Solid {
+  translation 3.15572 3.59879 -0.000105315
+  rotation -0.9999999999803539 2.469639999951481e-06 -5.7613299998868125e-06 -1.5707853071795865
+  children [
+    Solid {
+      translation -0.03 0 -3.14
+      rotation 1 0 0 -1.5707953071795862
+    }
+    Solid {
+      translation -0.03 -6.52553e-06 3.26
+      rotation 1 0 0 -1.5707953071795862
+      name "solid(1)"
+    }
+    Shape {
+      appearance Appearance {
+        material Material {
+          ambientIntensity 1
+          diffuseColor 0 0 0
+        }
+      }
+      geometry Box {
+        size 0.2 0.01 6.5
+      }
+    }
+  ]
+  name "green_line(1)"
+  recognitionColors [
+    0 0 0
+  ]
+}
+Solid {
+  translation -3.23428 -3.74121 -7.70328e-05
+  rotation -0.9999999999803539 2.469639999951481e-06 -5.7613299998868125e-06 -1.5707853071795865
+  children [
+    Solid {
+      translation -0.03 0 -3.14
+      rotation 1 0 0 -1.5707953071795862
+    }
+    Solid {
+      translation -0.03 -6.46436e-06 3.2
+      rotation 1 0 0 -1.5707953071795862
+      name "solid(1)"
+    }
+    Shape {
+      appearance Appearance {
+        material Material {
+          ambientIntensity 1
+          diffuseColor 0 0 0
+        }
+      }
+      geometry Box {
+        size 0.2 0.01 6.5
+      }
+    }
+  ]
+  name "yellow_line"
+  recognitionColors [
+    0 0 0
+  ]
+}
+Solid {
+  translation -3.23429 3.76879 -0.000159795
+  rotation -0.9999999999803539 2.469639999951481e-06 -5.7613299998868125e-06 -1.5707853071795865
+  children [
+    Solid {
+      translation -0.03 0 -3.14
+      rotation 1 0 0 -1.5707953071795862
+    }
+    Solid {
+      translation -0.03 -6.46436e-06 3.2
+      rotation 1 0 0 -1.5707953071795862
+      name "solid(1)"
+    }
+    Shape {
+      appearance Appearance {
+        material Material {
+          ambientIntensity 1
+          diffuseColor 0 0 0
+        }
+      }
+      geometry Box {
+        size 0.2 0.01 6.5
+      }
+    }
+  ]
+  name "yellow_line(1)"
+  recognitionColors [
+    0 0 0
+  ]
+}
+Solid {
+  translation -8.32428 -3.57122 -0.000120799
+  rotation -0.9999999999803539 2.469639999951481e-06 -5.7613299998868125e-06 -1.5707853071795865
+  children [
+    Solid {
+      translation -0.03 0 -3.14
+      rotation 1 0 0 -1.5707953071795862
+    }
+    Solid {
+      translation -0.03 -6.49496e-06 3.23
+      rotation 1 0 0 -1.5707953071795862
+      name "solid(1)"
+    }
+    Shape {
+      appearance Appearance {
+        material Material {
+          ambientIntensity 1
+          diffuseColor 0 0 0
+        }
+      }
+      geometry Box {
+        size 0.2 0.01 6.5
+      }
+    }
+  ]
+  name "blue_line"
+  recognitionColors [
+    0 0 0
+  ]
+}
+Solid {
+  translation -8.32428 3.57878 -0.00019957
+  rotation -0.9999999999803539 2.469639999951481e-06 -5.7613299998868125e-06 -1.5707853071795865
+  children [
+    Solid {
+      translation -0.03 0 -3.14
+      rotation 1 0 0 -1.5707953071795862
+    }
+    Solid {
+      translation -0.03 -6.49496e-06 3.23
+      rotation 1 0 0 -1.5707953071795862
+      name "solid(1)"
+    }
+    Shape {
+      appearance Appearance {
+        material Material {
+          ambientIntensity 1
+          diffuseColor 0 0 0
+        }
+      }
+      geometry Box {
+        size 0.2 0.01 6.5
+      }
+    }
+  ]
+  name "blue_line(1)"
+  recognitionColors [
+    0 0 0
+  ]
+}
+Solid {
+  translation 8.52 -8.77 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 0 0
+        }
+      }
+      geometry Plane {
+        size 3 3
+      }
+    }
+  ]
+  name "red_plane1"
+}
+Solid {
+  translation 8.52 8.77 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 0 0
+        }
+      }
+      geometry Plane {
+        size 3 3
+      }
+    }
+  ]
+  name "red_plane1(1)"
+}
+Solid {
+  translation -1.08 -0.69 0.0100024
+  rotation -1 0 0 -5.307179586466759e-06
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 0 0
+        }
+      }
+      geometry Plane {
+        size 0.2 0.2
+      }
+    }
+  ]
+  name "red_box"
+}
+Solid {
+  translation -1.08 0.69 0.010012
+  rotation -1 0 0 -5.307179586466759e-06
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 0 0
+        }
+      }
+      geometry Plane {
+        size 0.2 0.2
+      }
+    }
+  ]
+  name "red_box(1)"
+}
+Solid {
+  translation -0.88 -0.69 0.0100026
+  rotation -1 0 0 -5.307179586466759e-06
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.0313726 0 1
+        }
+      }
+      geometry Plane {
+        size 0.2 0.2
+      }
+    }
+  ]
+  name "blue_box"
+}
+Solid {
+  translation -0.88 0.69 0.0100112
+  rotation -1 0 0 -5.307179586466759e-06
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.0313726 0 1
+        }
+      }
+      geometry Plane {
+        size 0.2 0.2
+      }
+    }
+  ]
+  name "blue_box(1)"
+}
+Solid {
+  translation -0.68 -0.69 0.0100023
+  rotation -1 0 0 -5.307179586466759e-06
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 1 0
+        }
+      }
+      geometry Plane {
+        size 0.2 0.2
+      }
+    }
+  ]
+  name "green_box"
+}
+Solid {
+  translation -0.68 0.69 0.0100114
+  rotation -1 0 0 -5.307179586466759e-06
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 1 0
+        }
+      }
+      geometry Plane {
+        size 0.2 0.2
+      }
+    }
+  ]
+  name "green_box(1)"
+}
+Solid {
+  translation -0.48 -0.7 0.010003
+  rotation -1 0 0 -5.307179586466759e-06
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 0
+        }
+      }
+      geometry Plane {
+        size 0.2 0.2
+      }
+    }
+  ]
+  name "yellow_box"
+}
+Solid {
+  translation -0.48 0.69 0.0100116
+  rotation -1 0 0 -5.307179586466759e-06
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 0
+        }
+      }
+      geometry Plane {
+        size 0.2 0.2
+      }
+    }
+  ]
+  name "yellow_box(1)"
+}
+Solid {
+  translation 2.97 -8.81 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 1 0
+        }
+      }
+      geometry Plane {
+        size 3 3
+      }
+    }
+  ]
+  name "green_plane1(1)"
+}
+Solid {
+  translation 2.97 8.81 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 1 0
+        }
+      }
+      geometry Plane {
+        size 3 3
+      }
+    }
+  ]
+  name "green_plane1(2)"
+}
+Solid {
+  translation -3.32 -8.81 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.666667 1 0
+        }
+      }
+      geometry Plane {
+        size 3 3
+      }
+    }
+  ]
+  name "yellow_plane1(2)"
+}
+Solid {
+  translation -3.32 8.81 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.666667 1 0
+        }
+      }
+      geometry Plane {
+        size 3 3
+      }
+    }
+  ]
+  name "yellow_plane1(1)"
+}
+Solid {
+  translation -8.55 -8.8 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 0 1
+        }
+      }
+      geometry Plane {
+        size 3 3
+      }
+    }
+  ]
+  name "blue_plane1(3)"
+}
+Solid {
+  translation -8.55 8.8 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 0 1
+        }
+      }
+      geometry Plane {
+        size 3 3
+      }
+    }
+  ]
+  name "blue_plane1(1)"
+}
+RectangleArena {
+  floorSize 20 20
+  floorAppearance NULL
+}
